@@ -44,6 +44,7 @@ body{
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 3.5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
@@ -83,6 +84,7 @@ body{
 .logo h2{
     font-size: 2.25rem;
     text-align: left;
+    margin-bottom: 0;
 }
 .logo span{
     color: var(--primary-color);
@@ -107,12 +109,71 @@ body{
 }
 /* navigation bar end */
 
+/* banner section styles start */
+.banner-container{
+    width: 100%;
+    background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%), url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+}
+.banner-content{
+    max-width: 800px;
+    padding: 6.5rem 0;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-title-container{
+    max-width: 676px;
+}
+.banner-title-container h1{
+    color: var(--light);
+    font-size: 4rem;
+}
+.banner-title-container p{
+    color: var(--light);
+}
+.banner-input-container{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+}
+.banner-input-container > div{
+    width: 100%;
+}
+.banner-input-container input,
+.banner-input-container select,
+.banner-input-container button{
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background: var(--light);
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    padding: 0 0.5rem;
+}
+.banner-input-container button{
+    background-color: var(--primary-color);
+    color: var(--light);
+    cursor: pointer;
+}
+/* banner section styles end */
 /* header styles end */
 
 
 
 /* responsive for tablate view */
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media screen and (min-width: 577px) and (max-width: 992px){
     /* header section responsive */
     .navbar-container{
         flex-direction: column;
@@ -145,5 +206,21 @@ body{
     }
     .bar-icon i{
         font-size: 2.5rem;
+    }
+
+    /* banner section responsive */
+    .banner-content{
+        margin: 0 2rem;
+        padding: 2rem 0;
+    }
+    .banner-input-container{
+        margin-top: 2rem;
+    }
+    .banner-title-container h1{
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .banner-input-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
