@@ -56,6 +56,10 @@ body{
     text-align: center;
 }
 
+.text-left{
+    text-align: left;
+}
+
 .btn{
     background-color: var(--primary-color);
     color: var(--light);
@@ -64,6 +68,11 @@ body{
     font-weight: 800;
     line-height: 1.5rem;
     text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 32px;
+    cursor: pointer;
 }
 /* common styles end */
 
@@ -170,6 +179,42 @@ body{
 /* banner section styles end */
 /* header styles end */
 
+/* main section styles start */
+/* popular section styles start */
+.popular-tour-container{
+    margin: 100px 0;
+    justify-content: space-between;
+}
+.popular-tour-content{
+    width: 45%;
+}
+.popular-list{
+    margin: 24px 0;
+    margin-left: 32px;
+}
+.popular-list li{
+    color: var(--dark-light);
+    line-height: 26px;
+    text-align: left;
+}
+.popular-tour-img{
+    width: 40%;
+}
+.popular-tour-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+/* popular section styles end */
+/* main section styles end */
+
+
+
+
+
+
+
+
 
 
 /* responsive for tablate view */
@@ -181,6 +226,12 @@ body{
     }
     .navbar{
         gap: 1.75rem;
+    }
+
+    /* our popular section responsive */
+    .popular-tour-img img{
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -222,5 +273,18 @@ body{
     }
     .banner-input-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* our popular section responsive */
+    .popular-tour-container{
+        flex-direction: column;
+        margin: 50px 0;
+    }
+    .popular-tour-content{
+        width: 100%;
+    }
+    .popular-tour-img{
+        width: 100%;
+        margin-top: 32px;
     }
 }
