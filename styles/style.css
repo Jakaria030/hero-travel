@@ -22,7 +22,24 @@ body{
     font-size: 16px;
 }
 
-.section-titile{
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.d-none{
+    display: none;
+}
+
+.section-title{
     color: var(--dark-primary);
     font-size: 2.5rem;
     font-weight: 800;
@@ -48,3 +65,85 @@ body{
     text-align: center;
 }
 /* common styles end */
+
+/* header styles start */
+/* navigation bar start */
+.navbar-container{
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+.logo{
+    width: 18rem;
+    align-items: center;
+}
+.logo img{
+    margin-right: 1rem;
+}
+.logo h2{
+    font-size: 2.25rem;
+    text-align: left;
+}
+.logo span{
+    color: var(--primary-color);
+}
+
+.navbar{
+    gap: 2.75rem;
+}
+.nav-item{
+    list-style-type: none;
+    padding: 0.625rem 0;
+}
+.nav-link{
+    text-decoration: none;
+    color: rgb(66, 66, 71);
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+}
+.active{
+    color: var(--primary-color);
+}
+/* navigation bar end */
+
+/* header styles end */
+
+
+
+/* responsive for tablate view */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    /* header section responsive */
+    .navbar-container{
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    .navbar{
+        gap: 1.75rem;
+    }
+}
+
+/* responsive for mobile view */
+@media screen and (max-width: 576px){
+    /* header section responsive */
+    .navbar-container{
+        padding: 1.5rem 0;
+    }
+    .logo h2{
+        font-size: 1.75rem;
+    }
+    .logo img{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.5rem;
+    }
+    .navbar{
+        display: none;
+    }
+    .bar-icon{
+        display: block;
+    }
+    .bar-icon i{
+        font-size: 2.5rem;
+    }
+}
