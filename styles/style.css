@@ -387,6 +387,56 @@ body{
     text-align: left;
 }
 /* perfact place styles end */
+
+/* save percentage styles start */
+.save-percentage-container{
+    margin: 100px 0;
+    justify-content: space-between;
+    gap: 24px;
+}
+.save-percentage-form{
+    width: 40%;
+    border: 1px solid var(--primary-color);
+    border-radius: 16px;
+    padding: 40px;
+}
+.save-percentage-form h2{
+    color: var(--dark-primary);
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+.save-percentage-form p{
+    color: var(--dark-light);
+    font-size: 1rem;
+    line-height: 26px;
+    margin-bottom: 48px;
+}
+.sp-input-form{
+    flex-direction: column;
+}
+.sp-input-form input[type="text"], .sp-input-form input[type="email"]{
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.3);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    outline: none;
+    border: none;
+    margin-bottom: 32px;
+}
+.save-percentage-img{
+    width: 60%;
+}
+.save-percentage-img img{
+    width: 100%;
+    border-radius: 16px;
+}
+/* save percentage styles end */
 /* main section styles end */
 
 
@@ -414,6 +464,14 @@ body{
     }
     .row-2 .col:last-child{
         grid-column: span 2;
+    }
+
+    /* save percentage responsive */
+    .save-percentage-container{
+        flex-direction: column;
+    }
+    .save-percentage-form, .save-percentage-img{
+        width: 100%;
     }
 }
 
@@ -546,5 +604,19 @@ body{
     }
     .perfect-place-video{
         margin-top: 20px;
+    }
+
+    /* save percentage responsive */
+    .save-percentage-container{
+        margin: 50px 0;
+    }
+    .save-percentage-container{
+        flex-direction: column;
+    }
+    .save-percentage-form, .save-percentage-img{
+        width: 100%;
+    }
+    .save-percentage-form{
+        padding: 25px;
     }
 }
