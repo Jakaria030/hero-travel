@@ -263,10 +263,10 @@ body{
     width: 100%;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
+    margin-top: 48px;
 }
-[class*="card-"]{
+.card-1, .card-2, .card-3{
     padding: 32px;
-    box-sizing: border-box;
     border-radius: 16px;
 }
 .card-1 h2, .card-2 h2, .card-3 h2{
@@ -354,7 +354,39 @@ body{
     line-height: 25px;
     margin-top: 16px;
 }
+.btn-secondary{
+    display: block;
+    margin: 60px auto;
+}
 /* deals and discounts styles end */
+
+/* perfact place styles start */
+.perfect-place-container{
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.perfect-place-content{
+    width: 45%;
+}
+.perfect-place-video{
+    width: 50%;
+    border-radius: 16px;
+}
+.perfect-place-video > video{
+    width: 100%;
+}
+.perfect-place-list{
+    margin: 24px 0;
+    margin-left: 32px;
+}
+.perfect-place-list li{
+    color: var(--dark-primary);
+    font-weight: 800;
+    line-height: 26px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+/* perfact place styles end */
 /* main section styles end */
 
 
@@ -387,9 +419,23 @@ body{
 
 /* responsive for mobile view */
 @media screen and (max-width: 576px){
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
     .section-title{
         font-size: 2rem;
         margin-bottom: 1rem;
+    }
+    .section-description,
+    .perfect-place-list, 
+    .popular-list, 
+    .popular-list+p,
+    .dd-description,
+    .card-1 p,
+    .card-2 p,
+    .card-3 p{
+        font-size: 0.875rem;
     }
     .btn{
         padding: 0.75rem 1.25rem;
@@ -465,7 +511,9 @@ body{
     .card-container{
         grid-template-columns: 1fr;
     }
-
+    .card-1 h2, .card-2 h2, .card-3 h2{
+        font-size: 1.25rem;
+    }
     /* deals and discounts responsice */
     .dd-time-content{
         grid-template-columns: repeat(2, 1fr);
@@ -486,5 +534,17 @@ body{
     .dd-price{
         font-size: 1rem;
         margin-top: 10px;
+    }
+
+    /* perfact place responsive */
+    .perfect-place-container{
+        margin-top: 25px;
+        flex-direction: column;
+    }
+    .perfect-place-content, .perfect-place-video{
+        width: 100%;
+    }
+    .perfect-place-video{
+        margin-top: 20px;
     }
 }
