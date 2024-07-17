@@ -432,13 +432,67 @@ body{
 .save-percentage-img{
     width: 60%;
 }
-.save-percentage-img img{
+.save-percentage-img .img{
+    position: relative;
+}
+.save-percentage-img .img img{
     width: 100%;
     border-radius: 16px;
+}
+.sticker{
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    color: var(--light);
+    background-color: var(--primary-color);
+    padding: 20px 25px;
+    border-radius: 16px;
+    transform: rotate(-30deg);
+    text-align: center;
 }
 /* save percentage styles end */
 /* main section styles end */
 
+/* footer styles start */
+.footer{
+    background: rgba(19, 19, 24, 0.05);
+    padding: 100px 0;
+}
+.footer > div{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-logo{
+    margin-bottom: 32px;
+}
+.footer-logo img{
+    width: 48px;
+}
+.footer-logo h2{
+    font-size: 2rem;
+}
+.social-icons{
+    gap: 32px;
+    font-size: 2rem;
+    margin-top: 32px;
+}
+.social-icons a{
+    color: var(--dark-primary);
+    text-decoration: none;
+    display: block;
+}
+.hr-line{
+    width: 60%;
+    margin: 50px 0;
+    border: 1px solid rgba(19, 19, 24, 0.1);
+}
+.footer > div > span{
+    color: var(--dark-primary);
+    font-size: 1rem;
+    font-weight: 300;
+}
+/* footer styles end */
 
 
 /* responsive for tablate view */
@@ -618,5 +672,16 @@ body{
     }
     .save-percentage-form{
         padding: 25px;
+    }
+    .sticker{
+        padding: 10px 20px;
+    }
+    
+    /* footer responsive */
+    .footer{
+        padding: 25px 0;
+    }
+    .hr-line{
+        margin: 25px 0;
     }
 }
